@@ -1,18 +1,18 @@
 # eco-reporter
 
 Description:
-Ce projet consiste en une application permettant l'envoi de commandes directes depuis le terminal vers un parc de conteneurs Docker en utilisant le protocole SSH. L'application enregistre les commandes exécutées et leurs sorties dans un fichier de logs et génère un graphique de fréquence des commandes utilisées par conteneur.
+Ce projet est une application conteneurisée via Docker permettant la réception de données sur des espèces menacées envoyées par les utilisateurs via RabbitMQ. L'application traite ces données et génère un rapport personnalisé à l'aide d'un template Jinja.
 
 Fonctionnalités:
-Envoi de commandes SSH directement depuis le terminal vers des conteneurs Docker
-Authentification à l'aide d'identifiants et clés SSH fournis dans un fichier JSON
-Enregistrement des commandes exécutées et leurs sorties dans un fichier de logs
-Génération d'un graphique de fréquence des commandes utilisées par conteneur
+Réception de données sur des espèces menacées via RabbitMQ
+Conteneurisation de l'application avec Docker
+Traitement des données reçues
+Génération de rapports personnalisés grâce à un template Jinja
 
 Installation et utilisation:
 Clonez ce dépôt et accédez au dossier du projet
-Installez les dépendances requises
-Configurez le fichier JSON avec les informations des conteneurs Docker (identifiants et clés SSH)
-Exécutez l'application
-Envoyez des commandes SSH depuis le terminal
-Consultez le fichier de logs et le graphique généré
+Installez Docker et RabbitMQ sur votre système
+Construisez l'image Docker à l'aide du fichier Dockerfile
+Exécutez le conteneur Docker et configurez RabbitMQ
+Envoyez des données sur des espèces menacées à l'application via RabbitMQ
+Consultez les rapports générés par l'application
